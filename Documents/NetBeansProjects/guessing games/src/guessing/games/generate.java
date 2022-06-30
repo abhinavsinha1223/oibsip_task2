@@ -6,7 +6,7 @@ package guessing.games;
 
 /**
  *
- * @author Abhinav
+ 
  */
 import java.awt.event.KeyEvent;
 import java.util.*;
@@ -53,15 +53,15 @@ public class generate extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        jLabel1.setText("NUMBER");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(31, 90, 120, 25));
+        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel1.setText("GENERATED NUMBER:");
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(31, 90, 230, 25));
 
-        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        jLabel2.setText("GUESS THE NUMBER");
+        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel2.setText("ENTER YOUR NUMBER:");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(31, 222, -1, -1));
 
-        guess.setBackground(new java.awt.Color(255, 255, 204));
+        guess.setBackground(new java.awt.Color(204, 255, 255));
         guess.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
         guess.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
@@ -83,7 +83,7 @@ public class generate extends javax.swing.JFrame {
         getContentPane().add(hint, new org.netbeans.lib.awtextra.AbsoluteConstraints(31, 382, 378, 65));
 
         number.setEditable(false);
-        number.setBackground(new java.awt.Color(255, 255, 204));
+        number.setBackground(new java.awt.Color(204, 255, 255));
         number.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
         number.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
         getContentPane().add(number, new org.netbeans.lib.awtextra.AbsoluteConstraints(31, 122, 378, 58));
@@ -98,16 +98,16 @@ public class generate extends javax.swing.JFrame {
         scores.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         scores.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         scores.setText("0");
-        getContentPane().add(scores, new org.netbeans.lib.awtextra.AbsoluteConstraints(553, 197, 81, 46));
+        getContentPane().add(scores, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 200, 81, 46));
 
         jLabel6.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        jLabel6.setText("LIVES:");
-        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 250, 91, 56));
+        jLabel6.setText("LIFE:");
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 190, 91, 56));
 
         lives.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         lives.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lives.setText("5");
-        getContentPane().add(lives, new org.netbeans.lib.awtextra.AbsoluteConstraints(553, 255, 81, 47));
+        getContentPane().add(lives, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 200, 81, 47));
 
         button2.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         button2.setText("RESET ");
@@ -116,12 +116,12 @@ public class generate extends javax.swing.JFrame {
                 button2ActionPerformed(evt);
             }
         });
-        getContentPane().add(button2, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 327, 161, 48));
+        getContentPane().add(button2, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 120, 161, 48));
 
-        jLabel5.setFont(new java.awt.Font("Tempus Sans ITC", 1, 18)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Wide Latin", 1, 36)); // NOI18N
         jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel5.setText("Abhinav's Guessing Game");
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(174, 26, 317, 46));
+        jLabel5.setText("Guessing Game");
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 20, 570, 46));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
